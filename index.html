@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About blank</title>
+	<title>Alugzoom</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Not Found Error 404</h1>
+	<div id="interface" align="middle">
+		<div id="cabecalho" align="middle">
+			<h1>Alugzoom</h1>
+			<input height="20" type="text" id="localidade" placeholder=" Onde quer alugar?" size="40" />	
+		</div>
+		<div id="map"></div>
+	</div>
+	<script>
+	function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(51.5, -0.12),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQRue0rDV1BLlTU8KVTGzMiM-5ge85tIg&callback=myMap"></script>
 </body>
 </html>
