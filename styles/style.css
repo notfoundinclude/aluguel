@@ -1,0 +1,16 @@
+body {
+	background: rgb(240,240,240);
+}
+
+#cabecalho {
+	width: 70%;
+	height: 200px;
+	background: white;
+	border-radius: 50px 50px 0px 0px;
+}
+
+#map {
+	width: 70%;
+	height: 400px;
+	background: gray;
+}

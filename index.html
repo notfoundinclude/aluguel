@@ -2,26 +2,36 @@
 <html>
 <head>
 	<title>Alugzoom</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script language="javascript" src="scripts/api-map.js"></script>
 </head>
 <body>
-	<div id="interface" align="middle">
-		<div id="cabecalho" align="middle">
-			<h1>Alugzoom</h1>
-			<input height="20" type="text" id="localidade" placeholder=" Onde quer alugar?" size="40" />	
+	<div id="interface" align="center">
+		<div id="cabecalho" align="center">
+			<nav id="main-menu">
+				<ul>
+					<li class="focus-li">quero anunciar meu imóvel</li>
+					<li>perguntas</li>
+					<li>contato</li>
+				</ul>
+			</nav>
+			<h1 id="titulo1">Alugzoom</h1>
+			<input type="text" id="localidade" placeholder="Onde quer alugar?" size="40"/>
+			<select id="dropdown1">
+				<optgroup id="optdrops">
+					<option value="" disabled selected></option>
+					<option value="apartamento">apartamento</option>
+					<option value="kitnet">kitnet</option>
+					<option value="casa">casa</option>
+					<option value="republica">república</option>
+					<option value="comercial">comercial</option>
+					<option value="flat">flat</option>
+				</optgroup>
+			</select>	
 		</div>
 		<div id="map"></div>
 	</div>
-	<script>
-	function myMap() {
-	var mapOptions = {
-	    center: new google.maps.LatLng(51.5, -0.12),
-	    zoom: 10,
-	    mapTypeId: google.maps.MapTypeId.HYBRID
-	}
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-	}
-	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQRue0rDV1BLlTU8KVTGzMiM-5ge85tIg&callback=myMap"></script>
 </body>
