@@ -8,10 +8,10 @@
 </head>
 <body>
 	<div id="interface" align="center">
-		<div id="cabecalho" align="center">
+		<header id="cabecalho" align="center">
 			<nav id="main-menu">
 				<ul>
-					<li class="focus-li">quero anunciar meu imóvel</li>
+					<li class="focus-li">anuncie seu imóvel</li>
 					<li>perguntas</li>
 					<li>contato</li>
 				</ul>
@@ -20,7 +20,7 @@
 			<input type="text" id="localidade" placeholder="Onde quer alugar?" size="40"/>
 			<select id="dropdown1">
 				<optgroup id="optdrops">
-					<option value="" disabled selected></option>
+					<option value="filtrar" disabled selected>Filtrar</option>
 					<option value="apartamento">apartamento</option>
 					<option value="kitnet">kitnet</option>
 					<option value="casa">casa</option>
@@ -29,10 +29,9 @@
 					<option value="flat">flat</option>
 				</optgroup>
 			</select>	
-		</div>
+		</header>
 		<div id="map"></div>
 	</div>
-
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQRue0rDV1BLlTU8KVTGzMiM-5ge85tIg&callback=myMap"></script>
 </body>
 </html>
