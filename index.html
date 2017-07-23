@@ -4,7 +4,6 @@
 	<title>Alugzoom</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script language="javascript" src="javascript/api-map.js"></script>
 </head>
 <body>
 	<div id="interface" align="center">
@@ -17,7 +16,7 @@
 				</ul>
 			</nav>
 			<h1 id="titulo1">Alugzoom</h1>
-			<input type="text" id="localidade" placeholder="Onde quer alugar?" size="40"/>
+			<input type="text" id="busca" placeholder="Onde quer alugar?" size="40"/>
 			<select id="dropdown1">
 				<optgroup id="optdrops">
 					<option value="filtrar" disabled selected>Filtrar</option>
@@ -32,6 +31,8 @@
 		</header>
 		<div id="map"></div>
 	</div>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQRue0rDV1BLlTU8KVTGzMiM-5ge85tIg&callback=myMap"></script>
+	<script language="javascript" src="javascript/funcoes.js"></script>
+	<script language="javascript" src="javascript/map-api.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQRue0rDV1BLlTU8KVTGzMiM-5ge85tIg&libraries=places,geometry&callback=initMap"  async defer></script>
 </body>
 </html>

@@ -40,7 +40,7 @@ h1#titulo1 {
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
 }
 
-input#localidade {
+input#busca {
 	height: 42px;
 	width: 32%;
 	font-size: 20px;
